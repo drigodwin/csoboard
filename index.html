@@ -1,7 +1,9 @@
 <html>
 <head>
 <title>CSO Board</title>
-
+<!-- http://raw.githack.com/ -->
+<script type="text/javascript" 
+src="https://gist.githack.com/drigodwin/f9dd4c1fd73cbe8666b4ef647f5b8e08/raw/timestamp.js"></script>
 <script>
 /*
  * Basic Count Up from Date and Time
@@ -9,15 +11,6 @@
  */
 window.onload = function() {
   // Month Day, Year Hour:Minute:Second, id-of-element-container
-  var client = new XMLHttpRequest();
-  client.open('GET', 'https://gist.github.com/drigodwin/f9dd4c1fd73cbe8666b4ef647f5b8e08/raw/timestamp.js');
-  client.onreadystatechange = function() {
-    alert(client.responseText);
-  }
-  client.send();
-
-
-  //alert(document.getElementsByTagName("script")[0].innerHTML);
   countUpFromTime(countdown_date, 'countup1'); // ****** Change this line!
 };
 function countUpFromTime(countFrom, id) {
